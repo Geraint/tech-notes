@@ -1,6 +1,7 @@
 # Git Notes
 
 - [branches cleanup](branches-cleanup.md)
+- [deleting files](deleting-files.md)
 - [fixing conflicts](fixing-conflicts.md)
 
 ## Useful references
