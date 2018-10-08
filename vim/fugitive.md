@@ -9,11 +9,11 @@ Jump to next file (in Gstatus buffer) | `<c-n>`
 Jump to previous file (in Gstatus buffer) | `<c-p>`
 For file(s) under cursor (in Gstatus buffer), add to/remove from git index | '-' | multiple files can be added/removed in visual mode.  Note that `:Git add .` is faster if you have a lot of files
 Open file under cursor | `<CR>` |
-Diff file under cursor | <kbd>D</kbd> |
+Diff file under cursor | `D` |
 In a diff window, put current change | `:diffput` | If current buffer is index (LHS), then this resets the change.  If current buffer is working copy (RHS), then this adds the change.
 In a diff window, get the current change | `:diffget` | If current buffer is index (LHS), then this adds the change.  If current buffer is working copy (RHS), then this resets the change.
 In a diff window, redraw files (useful if vim has gotten confused) | `:diffupdate` |
-Open Commit window from status window | <kbd>c</kbd> <kbd>c</kbd>
+Open Commit window from status window | `cc`
 Edit index version of current file | `:Gedit :0` |
 
 ## Staging and unstaging
@@ -63,7 +63,7 @@ Operation | Keystrokes
 --------- | ----------
 Show changes in current file | `:Gvdiff`
 Close that view | `:q`
-Next change | <kbd>]</kbd> <kbd>c</kbd>
-Previous change | <kbd>[</kbd> <kbd>c</kbd>
+Next change | `]c`
+Previous change | `[c`
 
 See also [this gist](https://gist.github.com/mattratleph/4026987).
