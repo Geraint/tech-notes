@@ -8,3 +8,4 @@
 - [spell](spell.md)
 - [ultisnips](ultisnips.md)
 - [windows](windows.md)
+- [PHP Language Server](php-language-server.md)
