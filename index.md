@@ -1,5 +1,5 @@
 # Tech Notes
 
-- [Docker](docker.md)
+- [Docker](docker/index.md)
 - [git](git/index.md)
 - [vim](vim/index.md)
