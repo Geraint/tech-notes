@@ -31,6 +31,6 @@ In `<project-root>/.dockerignore`
 ## Deleting Artifacts
 
 ```
-docker suystem prune --all --force
+docker system prune --all --force
 ```
 
