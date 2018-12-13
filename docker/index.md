@@ -1,5 +1,11 @@
 # Docker
 
+## Attaching to a running container
+
+```
+docker exec -it <container-name> /bin/bash
+```
+
 ## Installing composer
 
 In your `Dockerfile`:
@@ -20,5 +26,11 @@ In `<project-root>/.dockerignore`
 
 ```
 /vendor/bin/*
+```
+
+## Deleting Artifacts
+
+```
+docker suystem prune --all --force
 ```
 
