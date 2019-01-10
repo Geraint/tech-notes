@@ -4,6 +4,6 @@
 
 ```
 eval $(ssh-agent)
-ssy-add
+ssh-add
 ```
 
