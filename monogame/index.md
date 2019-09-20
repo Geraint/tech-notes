@@ -47,3 +47,17 @@ http://rbwhitaker.wikidot.com/monogame-introduction-to-2d-graphics
 - Origin (0,0) is top left - so y-axis go down, not up
 - not all screen sizes are the same, so width and height aren't known at build time
 - a *sprite* is a 2D image
+
+### Tutorial 2 - SpriteBatches
+
+http://rbwhitaker.wikidot.com/monogame-spritebatch-basics
+
+- Use the MonoGame Pipeline application to get content into the project
+- Use instance variables to store sprites:
+```
+private Texture2D background;
+```
+- Load them up in `LoadContent()` (or wherever):
+```
+background = Content.Load<Texture2D>("filename");
+```
