@@ -4,25 +4,25 @@
 
 ### Tutorial 3 - the Visual Studio template
 
-- GraphicsDeviceManager - talks to the graphic device
-- SpriteBatch - tool to draw sprites
-- Initialize() method - one time setup before game loop
-- LoadContent() method - note that you can load content anywhere
-- Update() method (by default, called 30 times per sec)
-- Draw() method (also called 30 times per sec by default)
+- `GraphicsDeviceManager` - talks to the graphic device
+- `SpriteBatch` - tool to draw sprites
+- `Initialize()` method - one time setup before game loop
+- `LoadContent()` method - note that you can load content anywhere
+- `Update()` method (by default, called 30 times per sec)
+- `Draw()` method (also called 30 times per sec by default)
 
 ### Tutorial 4 - Managing Content
 
 #### Store it
 
 - Content is normally art assets (fonts, images, 3d models, sound effects, music, video)
-- Content\Content.mgcb - open with MonoGame Pipeline application
-- Edit > Add > Existing Item
-- Edit > Add > New Folder
+- `Content\Content.mgcb` - open with MonoGame Pipeline application
+- `Edit > Add > Existing Item`
+- `Edit > Add > New Folder`
 
 #### Using Content
 
-In LoadContent(), you can run code like this:
+In `LoadContent()`, you can run code like this:
 
 ```
 Texture2D image = Content.Load<Texture2D>("[FileNameWithoutExtension]");
