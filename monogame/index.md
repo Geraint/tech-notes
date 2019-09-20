@@ -54,9 +54,9 @@ http://rbwhitaker.wikidot.com/monogame-spritebatch-basics
 
 - Use the MonoGame Pipeline application to get content into the project
 - Use instance variables to store sprites:
-```C#
-private Texture2D background;
-```
+    ```C#
+    private Texture2D background;
+    ```
 - Load them up in `LoadContent()` (or wherever):
 ```C#
 background = Content.Load<Texture2D>("filename");
