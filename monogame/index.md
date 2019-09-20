@@ -24,7 +24,7 @@
 
 In `LoadContent()` (and elsewhere), you can run code like this:
 
-```
+```C#
 Texture2D image = Content.Load<Texture2D>("[FileNameWithoutExtension]");
 Texture2D image = Content.Load<Texture2D>("Backgrounds/Logo"); // with folder name
 
@@ -32,7 +32,7 @@ Texture2D image = Content.Load<Texture2D>("Backgrounds/Logo"); // with folder na
 
 In `UnloadContent()` (and elsewhere), you can run code like this:
 
-```
+```C#
 Content.Unload(); // not necessary for very small games.  You could create multiple `ContentManager` objects, so you don't unload *all* content.
 ```
 
@@ -54,19 +54,19 @@ http://rbwhitaker.wikidot.com/monogame-spritebatch-basics
 
 - Use the MonoGame Pipeline application to get content into the project
 - Use instance variables to store sprites:
-```
+```C#
 private Texture2D background;
 ```
 - Load them up in `LoadContent()` (or wherever):
-```
+```C#
 background = Content.Load<Texture2D>("filename");
 ```
 - `spriteBatch` instance variable is already declared:
-```
+```C#
 SpriteBatch spriteBatch;
 ```
 - its already initialised in `LoadContent()`:
-```
+```C#
 protected override void LoadContent()
 {
     // Create a new SpriteBatch, which can be used to draw textures.
