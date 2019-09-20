@@ -22,15 +22,18 @@
 
 #### Using Content
 
-In `LoadContent()`, you can run code like this:
+In `LoadContent()` (and elsewhere), you can run code like this:
 
 ```
 Texture2D image = Content.Load<Texture2D>("[FileNameWithoutExtension]");
 Texture2D image = Content.Load<Texture2D>("Backgrounds/Logo"); // with folder name
 
-...
+```
 
-Content.Unload(); // not necessary for very small games.  You could create multiple ContentManager objects, so you don't unload *all* content.
+In `UnloadContent()` (and elsewhere), you can run code like this:
+
+```
+Content.Unload(); // not necessary for very small games.  You could create multiple `ContentManager` objects, so you don't unload *all* content.
 ```
 
 ## 2D Tutorials
