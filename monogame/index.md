@@ -58,25 +58,25 @@ http://rbwhitaker.wikidot.com/monogame-spritebatch-basics
     private Texture2D background;
     ```
 - Load them up in `LoadContent()` (or wherever):
-```C#
-background = Content.Load<Texture2D>("filename");
-```
+    ```C#
+    background = Content.Load<Texture2D>("filename");
+    ```
 - `spriteBatch` instance variable is already declared:
-```C#
-SpriteBatch spriteBatch;
-```
+    ```C#
+    SpriteBatch spriteBatch;
+    ```
 - its already initialised in `LoadContent()`:
-```C#
-protected override void LoadContent()
-{
-    // Create a new SpriteBatch, which can be used to draw textures.
-    spriteBatch = new SpriteBatch(GraphicsDevice);
-```
+    ```C#
+    protected override void LoadContent()
+    {
+        // Create a new SpriteBatch, which can be used to draw textures.
+        spriteBatch = new SpriteBatch(GraphicsDevice);
+    ```
 - You can draw (in `Draw()`) like this:
-```C#
-spriteBatch.Begin();
-spriteBatch.Draw(background, new Rectangle(0, 0, 800, 480), Color.White);
-spriteBatch.Draw(earth, new Vector2(400, 240), Color.White); // vector2 says where to draw it
-spriteBatch.End();
-```
+    ```C#
+    spriteBatch.Begin();
+    spriteBatch.Draw(background, new Rectangle(0, 0, 800, 480), Color.White);
+    spriteBatch.Draw(earth, new Vector2(400, 240), Color.White); // vector2 says where to draw it
+    spriteBatch.End();
+    ```
 - Order of drawing is important - things get drawn on top of other things
