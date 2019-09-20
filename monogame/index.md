@@ -73,7 +73,7 @@ protected override void LoadContent()
     spriteBatch = new SpriteBatch(GraphicsDevice);
 ```
 - You can draw (in `Draw()`) like this:
-```
+```C#
 spriteBatch.Begin();
 spriteBatch.Draw(background, new Rectangle(0, 0, 800, 480), Color.White);
 spriteBatch.Draw(earth, new Vector2(400, 240), Color.White); // vector2 says where to draw it
